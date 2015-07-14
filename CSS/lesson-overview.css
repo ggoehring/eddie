@@ -1,0 +1,41 @@
+.container-fluid, body{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow-y:scroll;
+	padding: 0;
+	overflow-x: hidden 
+}
+
+.navbar{
+	border-radius: 0;
+}
+
+.background{
+	top: 8.1%;
+	height: 91.9%;
+	padding: 0
+}
+
+.main-section{
+	width: 100%;
+	position: relative;
+	top: -3.5%;
+	text-align: center;
+}
+
+.header-box{
+	height: 15%;
+	
+}
+
+.lesson-list{
+	height: 70%;
+	background-color: yellow;
+	display: flex;
+	flex-direction:row;
+}
+
+.footer{
+	height: 15%;
+}

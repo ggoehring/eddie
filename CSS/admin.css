@@ -1,0 +1,31 @@
+.container-fluid, body{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow-y:scroll;
+	padding: 0;
+	overflow-x: hidden 
+}
+
+.navbar{
+	border-radius: 0;
+}
+
+.background{
+	top: 8.1%;
+	height: 91.9%;
+	padding: 0
+}
+
+.main-section{
+	width: 100%;
+	position: relative;
+	top: -3.5%;
+	text-align: center;
+	height: 33%;
+	border-bottom: 2px solid black
+}
+
+.hide{
+	display: none;
+}
