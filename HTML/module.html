@@ -12,7 +12,7 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<link rel="stylesheet" type="text/css" href="../CSS/lesson-overview.css">
+<link rel="stylesheet" type="text/css" href="../CSS/module.css">
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -71,16 +71,26 @@
 	
 	<div class="container-fluid background">
 		<div class="header-box main-section">
-			<a class="back-to-course" src="">Back to Course</a>
+			<a class="back-to-lesson" href="#">Back to Lesson</a>
 			<h1 class="title"></h1>
 		</div>
-		<div id="module-list" class="lesson-list main-section">
-		</div>
+		<div id="module-content" class="content-box main-section">
+			<div class="content inactive" id="text">
+				<h1 class="title"></h1>
+				<h3 class="text"></h3>
+			</div>
+			<div class="content inactive" id="test">
+			</div>
+			<div class="content inactive" id="video">
+				
+			</div>
 		<div class="footer main-section">
+			<div class="back btn btn-default">Previous</div>
+			<div class="btn btn-default next">Next</div>
 		</div>
 
 
 	</div>
-<script type="text/javascript" src="../JS/lesson-overview.js"></script>
+<script type="text/javascript" src="../JS/module.js"></script>
 </body>
 </html>

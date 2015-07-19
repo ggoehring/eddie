@@ -29,6 +29,12 @@
 	
 }
 
+.back-to-course{
+	position: relative;
+	z-index: 20;
+	float: left;
+}
+
 .lesson-list{
 	height: 70%;
 	background-color: yellow;

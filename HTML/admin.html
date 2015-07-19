@@ -106,6 +106,45 @@
 				Add Module
 			</div>
 		</div>
+		<div class="content main-section">
+			<h1 class="title">Add Content</h1>
+			<label>Select Module: </label><select class="select-module" id="select-module-mc">
+			<option disabled selected> -- Select an Option -- </option>
+			</select>
+			<div class="add_content" id="test">
+				<div class="questions">
+					<div class="question_box" id="qb1">	
+						<label>Question:</label><input class="question"><br>
+						<label>Answer 1:</label><input class="answer" id='ans0'>
+						<label>Answer 2:</label><input class="answer" id='ans1'><br>
+						<label>Answer 3:</label><input class="answer" id='ans2'>
+						<label>Answer 4:</label><input class="answer" id='ans3'><br>
+						<label>Correct Answer:</label>
+						<select class="correct">
+						<option value='0'>1</option>
+						<option value='1'>2</option>
+						<option value='2'>3</option>
+						<option value='3'>4</option>
+						</select>
+
+					</div>
+				</div>
+				
+				<div class="more_qs btn btn-default">Add Another Question</div>
+				<div class="save-content btn btn-default" id="test-save">Save</div>
+			</div>
+
+			<div class="add_content" id="text">
+				<h1>Edit Text</h1>
+				<input class="add-text" id="text-title" placeholder="Title Text"> <br>
+				<textarea class="add-text" id="text-content"> Body Text</textarea><br>
+				<div class="btn btn-default" id="text-save">Save</div>
+			</div>
+			<div class="add_content" id="video">
+				<label>Youtube URL: </label><input type='url' id="video-link">
+				<div class="btn btn-default" id="video-save">Save</div>
+			</div>
+		</div>
 
 	</div>
 

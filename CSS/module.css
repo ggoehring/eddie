@@ -22,18 +22,29 @@
 	position: relative;
 	top: -3.5%;
 	text-align: center;
-	height: 33%;
-	border-bottom: 2px solid black
 }
 
-.content{
-	height: auto;
+.header-box{
+	height: 15%;
+	
 }
 
-.add_content{
+.back-to-lesson{
+	position: relative;
+	z-index: 20;
+	float: left;
+}
+
+.inactive {
+	height: 70%;
+	background-color: yellow;
 	display: none;
 }
 
-.open{
-	display: inherit;
+.q-not{
+	display: none;
+}
+
+.footer{
+	height: 15%;
 }
