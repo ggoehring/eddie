@@ -3,6 +3,7 @@
 <head>
 <title>My Dashboard - Eddie</title>
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 <script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -12,6 +13,7 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 <link rel="stylesheet" type="text/css" href="../CSS/module.css">
 </head>
 <body>
@@ -53,7 +55,7 @@
 		        <button type="submit" class="btn btn-default">Submit</button>
 		      </form>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
+		        <li><a href="/HTML/graph.html">Graph</a></li>
 		        <li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -81,10 +83,22 @@
 			</div>
 			<div class="content inactive" id="test">
 			</div>
-			<div class="content inactive" id="video">
-				
+			<div class="content inactive" id="video">	
+			</div>
+			<div class="content inactive" id="graph-data">
+				<div class="chart">
+					<h6 id="y-label" class="axis-label"></h6>
+					<canvas id="graph">
+					</canvas>
+					<h6 id="x-label" class="axis-label"></h6>
+				</div>
+				<div class="prompts">
+				</div>
+				<br>
+				<div class="btn btn-default next-slide">Next</div>
 			</div>
 		<div class="footer main-section">
+			<br>
 			<div class="back btn btn-default">Previous</div>
 			<div class="btn btn-default next">Next</div>
 		</div>

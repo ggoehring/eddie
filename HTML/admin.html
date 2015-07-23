@@ -99,7 +99,7 @@
 				</option>
 				<option value="test">Test/Quiz</option>
 				<option value="video">Video</option>
-				<option value="scenario">Scenario</option>
+				<option value="graph-data">Data Input Graph</option>
 				<option value="text">Text</option>
 			</select>
 			<div class="btn btn-default" id="m-submit">
@@ -143,6 +143,34 @@
 			<div class="add_content" id="video">
 				<label>Youtube URL: </label><input type='url' id="video-link">
 				<div class="btn btn-default" id="video-save">Save</div>
+			</div>
+				<div class="add_content" id="graph-data">
+				<input type="text" class="add-graph" id="graph-data-title" placeholder="Title Text"> <br>
+				<textarea class="add-graph" id="graph-data-instructions">Instructions</textarea><br>
+				<h6> The instructions are meant to inform the student of the objective and is not the first prompt. When using student input in a prompt, surround a text response with percentage signs (%) and numbers that will be adjusted based off of your input, with at signs (@).</h6>
+				<div class="prompts">
+					<div class="prompt-input" id='pi1'>
+						<label class="plabel">Prompt 1:</label>
+						<textarea class="prompt">Prompt</textarea>
+						<label>Type of User Input:</label>
+						<select class="input-type">
+							<option value='number'>Number</option>
+							<option value='text'>Text</option>
+							<option value='none'>No Input</option>
+						</select>
+						<br>
+						<label>Enter the amount the students price shpuld change:</label>
+						<input type="number" class="amount-change">
+					</div>
+				</div>
+				<label>Graph After:</label>
+				<select class="graph-after">
+					<option value='0'>Prompt 1</option>
+				</select><br>
+				<div class="more_ps btn btn-default">
+					Add Another Prompt
+				</div>
+				<div class="btn btn-default" id="graph-data-save">Save</div>
 			</div>
 		</div>
 

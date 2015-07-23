@@ -1,7 +1,7 @@
 Parse.initialize("RJsXk8OshoyQNiUCuRhwSLNuBlWRgLqfZbvlnCsE", "hDqXwY4WH2JyTc95rwyOpL6KqhnWRzc7tsRweAKQ");
 
 var count = 1;
-var $qs;
+var pcount = 1;
 
 var Course = Parse.Object.extend("Course");
 var query = new Parse.Query(Course);
@@ -110,6 +110,19 @@ $(".more_qs").click(function(){
 	return count ++;
 })
 
+$(".more_ps").click(function(){
+	$('#pi'+pcount).after(function() {
+		return $(this).clone().attr("id","pi"+(pcount+1));
+	});
+	pcount += 1;
+	$('#pi'+pcount+" .plabel").text("Prompt "+(pcount)+ ":")
+	$('.graph-after').append(
+		"<option class='graph-input' value='"+pcount+"'>Prompt "+pcount+"</option>"
+		)
+	console.log(pcount)		
+
+})
+
 $("#test-save").click(function(){
 	var module = $(".select-module").val();
 	var questions = [];
@@ -146,6 +159,25 @@ $("#video-save").click(function(){
 	saveContent(module,[video_id]);
 })
 
+
+$("#graph-data-save").click(function(){
+	var module = $(".select-module").val();
+	var prompts = [];
+	var pnum = $(".prompts").children().length
+	for (var i=1; i <= pnum; i++){
+		var prompt = $("#pi"+[i]+" .prompt").val();
+		var type = $("#pi"+[i]+" .input-type").val();
+		var adjustment = $("#pi"+[i]+" .amount-change").val();
+		var res = [prompt, type, adjustment];
+		console.log(res);
+		prompts.push(res)
+	}
+	var title = $("#graph-data-title").val();
+	var instructions = $("#graph-data-instructions").val();
+	var graph_after = $(".graph-after").val() - 1;
+	var content = [title, instructions, prompts, graph_after]
+	saveContent(module, content);
+})
 
 var newCourse = function(name){
 	var Course = Parse.Object.extend("Course");

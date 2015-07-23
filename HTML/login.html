@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Dashboard - Eddie</title>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//www.parsecdn.com/js/parse-1.5.0.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../CSS/login.css">
+</head>
+<body>
+ <script type='text/javascript'>
+  Parse.initialize("RnRYjP71R4vP3HiQoApoBIYK6WZbqre87TLSMFtv", "euBHIslJrC2Xa5y0tuJNl1iVZTPXmGBqcKyyga6j");
+  </script> 
+ <div class='container lcontainer'>
+    <div class="alerts">
+    </div>
+    <!-- Login in form-->
+    <div id="login_box" class="content_box">
+      <h3 class="welcome1">Welcome to DINE Concierge!</h3><br>
+      <h4 class="welcome2">Please Login or Signup to continue.</h4>
+
+      <div id="login_form">
+        <input type='text' name='email' placeholder="Email" id='login_email'>
+        <br>
+        <input type='password' name='password' placeholder="Password" id='login_password'>
+        <br>
+      </div>
+        <div class="btn btn-success" id='login_button'>Login
+        </div>
+        <div class="btn btn-primary" id="register_link">Register</div>
+      <div id="forgotten_password">Forgot your password?</div>
+    
+    </div>
+
+<!--password reset form-->
+    <div id="password_box" class="content_box">
+      <div id="password_form">
+        <p class="welcome2" id="reset_instructions">Please enter your email address to reset your password.</p>
+        <input type='text' name='email' placeholder="Email" id='reset_email'><br>
+        <div class="btn btn-default" id='reset_button'>Reset
+        </div>
+      </div>
+      <div id='instructions'>
+        <p> An email with password reset instructions has been sent.</p>
+      </div>
+      <div id="to_login">Back to Login</div>
+    </div>
+    <style type="text/css">
+      #password_box, #instructions{
+        display: none;
+      }
+    </style>
+
+<!--registration form-->
+  <div id="register_box" class="content_box">
+      <div id="register_form">
+        <h4 class="welcome2" id="reg_text">Create an account and you'll be on your way to taking your dining experiences to the next level.</h4>
+       <input type='text' name='fname' placeholder="First Name" id='fname'>
+        <br>
+        <input type='text' name='lname' placeholder="Last Name" id='lname'>
+        <br>
+        <input type='text' name='email' placeholder="Email" id='register_email'>
+        <br>
+        <input type='text' name='confirm_email' placeholder="Confirm Email" id='confirm_email'>
+        <br>
+       <input type='password' name='password' placeholder="Password" id='register_password'>
+        <br>
+      <button class="btn btn-default" id='register_btn'>
+        Register
+      </button>
+      <div id="to_login1">Back to Login</div>
+    </div>
+    <style type="text/css">
+      #register_box, #instructions{
+        display: none;
+      }
+    </style>
+
+  </div>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!-- Main Backbone JS -->
+  <script src="../JS/login.js"></script>
+</body>
+
+  

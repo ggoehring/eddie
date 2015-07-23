@@ -45,6 +45,15 @@
 	display: none;
 }
 
+.p-not{
+	display: none;
+}
+
+#y-label{
+	position: relative;
+	top: -10%;
+	left: -30%
+}
 .footer{
 	height: 15%;
 }
