@@ -228,7 +228,7 @@ var changeSlide = function(element, content){
     $("#slide"+(snum+1)).addClass("p-active");
     $(element).addClass("p-not");
     $(element).removeClass("p-active");
-    
+
 }}
 var data = {
   labels:[],
@@ -267,6 +267,8 @@ var chartjsGraph = function(array){
       scaleGridLineWidth : 1,
 
       datasetFill : false,
+      scaleShowLabels: true,
+      scaleIntegersOnly: true,
 
     }
   var myLineChart = new Chart(ctx).Line(data, options);
